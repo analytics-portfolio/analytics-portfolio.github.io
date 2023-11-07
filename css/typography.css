@@ -27,14 +27,20 @@ p.indent {
 }
 
 .subheader-text {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
 }
 
 .body-text {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 450;
 }
+
+.post-text {
+  font-size: 14px;
+  font-weight: 425;
+}
+
 
 .project-card-text {
   overflow: hidden;
