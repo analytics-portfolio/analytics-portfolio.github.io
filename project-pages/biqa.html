@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -26,24 +25,21 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	</head>
 	<body>
-    <!-- NAVBAR -->
     <div class="navbar">
-      <a class="nav-title-link" href="../index.html">
-        <!-- 
-          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
-
-          (this should be the same across all pages)
-         -->
+      <a class="nav-title-link" href="./index.html">
         <span class="nav-title">Analytics Portfolio</span>
-        <!-- 
-          TODO - Change the email after 'mailto:' to your email address for contact 
-        
-          (this should be the same across all pages)
-        -->
+      </a>
+      <div class="button-container">
+        <!-- <a class="button" target="_blank" href="trungdoquoc.com">
+          <span class="button-text"> My Blogs </span>
+        </a> -->
+        <a class="button" target="_blank" href="https://drive.google.com/file/d/1tnX7ysW88CbWvHMgwMuBvOMZWfjAmJOg/view?usp=sharing">
+          <span class="button-text"> My Resume </span>
+        </a>
         <a class="button" href="mailto:trungquocdo1@gmail.com">
           <span class="button-text">Contact Me</span>
         </a>
-      </a>
+      </div>
     </div>
 
     <!-- MAIN PAGE CONTENT -->
@@ -77,24 +73,150 @@
         <div class="subheader-text">The Context </div>
         <div class="project-details-content">
           <div class="body-text">
-            Imagine you are the owner of Mastro's Ocean Club, steakhouse restaurant business in The Strip, Las Vegas. 
-            
+            <ul>
+              <li> 
+                Imagine you are the owner of <i>Mastro's Ocean Club</i>, 
+                a sophisticated steakhouse restaurant located in the vibrant heart of Las Vegas. 
+              </li>
+              <li> 
+                Your restaurant is one of the 158 <i> steakhouses </i> within the city's landscape, 
+                and one of 3990 <i>opening restaurants</i> in the whole city. </li>
+              <li>
+                You want your restaurant to stay ahead of the competition in a highly competitive market like Las Vegas;
+                
+              </li>
+              <li>
+                You want a comprehensive, data-driven view with metrics and insights of your business' service quality,
+                online social presence, and competition in your geographical area.
+              </li>
+            </ul>
           </div>
+        </div>
+        <iframe src="./demo_plots/restaurant_map.html" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+        <span class="image-caption">All steakhouses in Las Vegas</span>
 
-          <div class="post-text">It **works!** </div>
+        <iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="./demo_plots/bb_chart.html" width="100%" height="600"></iframe>
+        <object data="./demo_plots/bar_line_chart.svg" type="image/svg+xml" width="100%" height="400"></object>
+        <object data="./demo_plots/stacked_bar_chart.svg" type="image/svg+xml" width="100%" height="400"></object>
 
-          <iframe src="./demo_plots/restaurant_map.html" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-          <iframe id="igraph" scrolling="yes" style="border:none;" seamless="seamless" src="./demo_plots/bb_chart.html" width="100%" height="600"></iframe>
-          <object data="./demo_plots/bar_line_chart.svg" type="image/svg+xml" width="100%" height="600"></object>
-          <object data="./demo_plots/stacked_bar_chart.svg" type="image/svg+xml" width="100%" height="600"></object>
 
+        <iframe class="dataframe-iframe" src="./demo_plots/demo-pos-df.html" width="100%" height="100%" frameborder="0"></iframe>
+
+
+        <div class="subheader-text">The Challenges</div>
+        <div class="body-text"> As a business owner, you have to consider the following factors...
+        <ul>
+          <li> 
+            Customers looks up where they should eat in their area, 
+            and almost certainly they will see your restaurant's reviews and ratings (alongside those of other restaurants). 
+          <li>
+            A recent survey revealed that 
+            <a href="https://www.socialmediatoday.com/news/survey-finds-consumers-crave-authenticity-and-user-generated-content-deli/511360/" target="_blank"> 86% of users</a> prefer using the internet to find authentic information about products and services.            
+          </li>
+          <li>
+            In the F&B industry, for example, this translates into potential revenue if customers choose to visit your business.  
+          </li>
+        </ul>
+        </div>
+        <div class="body-text"> You seek a data-driven approach that guarantees a competitive edge in running the business; 
+          an all-in-one platform capable of consolidating scattered data from various sources and extracting the critical insights 
+          necessary to make informed decisions. 
+        </div>
+        <div class="subheader-text">About the Platform</div>
+        <div class="body-text">  What we provide ...
+          <ul>
+            <li> 
+              Data aggregation and valuable business metrics across various social platforms, 
+              including Yelp, TripAdvisor, OpenTable, Google, Instagram, and more, into a single dashboard. 
+            </li>
+            <li> 
+            Insights of your service quality, 
+            monitor your online presence, 
+            and secure a competitive advantage by benchmarking your performance within your geographical area.
+            </li>
+          </ul>
         </div>
 
-        <div class="subheader-text">What are</div>
-
         <div class="subheader-text">Roadmap</div>
+          <div class="body-text"> For Service Quality Monitoring, netrics included in current iteration:
+            <ul> 
+              <li>
+                Review & Rating Trend over time
+              </li>
+              <li>
+                Positive & Negative Review Trend over time
+              </li>
+              <li>
+                Most Frequent Positive & Negative Phrases in Reviews
+              </li>
+            </ul>              
+          </div>
 
-        <div class="subheader-text">Project Details / Background</div>
+          <div class="body-text"> Metrics included in upcoming iteration:
+            <ul> 
+              <li>
+                Data and metrics from additional sources (TripAdvisor, OpenTable, Twitter, Instagram)
+              </li>
+              <li>
+                Enhanced Customer Feedback and Sentiment Analysis metrics. 
+              </li>
+              <li>
+                Search Engine Results Pages (SERP) data from Google
+              </li>
+              <li>
+                SafeGraph point-of-interest (POI) traffic data
+              </li>
+              <li>
+                Google Local insights
+              </li>
+            </ul>              
+          </div>
+
+          <div class="body-text"> For Macro-level Business Intelligence, metrics included in current iteration:
+            <ul> 
+              <li>
+                Simple Competitive Benchmarking
+              </li>
+            </ul>       
+
+          </div>
+          <div class="body-text"> Metrics included in upcoming iteration:
+            <ul> 
+              <li>
+                Expanded Competitive Benchmarking
+              </li>
+              <li>
+                Google's SERP Business Ranking
+              </li>
+            </ul>              
+          </div>
+
+
+          
+        <div class="subheader-text"> About our target user base </div>
+            <div class="body-text">  
+              <ul>
+                <li>In 2022, there are 33.2 million small businesses exist across the U.S. <a href="https://advocacy.sba.gov/wp-content/uploads/2022/08/Small-Business-Economic-Profile-US.pdf" target="_blank">(U.S. Small Business Administration).</a></li>
+                <li>There are 1 million small businesses in the Hospitality industry in the US. <a href="https://advocacy.sba.gov/wp-content/uploads/2022/08/Small-Business-Economic-Profile-US.pdf" target="_blank">(U.S. Small Business Administration)</a>, 
+                  which takes up 3% of the total small businesses in the US.</li>
+                <li>Our earliest iteration focuses on the Hospitality industry. This includes Food and beverage services (restaurants, bars), hotels and other lodging services.</li>
+              </ul>              
+            </div>
+        
+        <div class="subheader-text">Built with</div>
+          <div class="body-text">
+        <ul>
+          <li> 
+            Plotly Dash for data apps framework.
+          </li>
+          <li> 
+            Python (Pandas, NumPy).
+          </li>
+          <li> 
+            Heroku for Public Dash App deployment.
+          </li>
+        </ul>
+          </div>
       </div>
 
       <!-- IMAGE GALLERY -->

@@ -37,7 +37,7 @@ p.indent {
 }
 
 .post-text {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 425;
 }
 
@@ -56,4 +56,31 @@ p.indent {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+}
+
+
+.table-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.dataframe-iframe {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 10px;
+  border-collapse: collapse;
+  width: 100%;
 }
