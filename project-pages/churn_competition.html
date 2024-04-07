@@ -1,15 +1,3 @@
-
-
-<!-- 
-  IMPORTANT! 
-  
-  Keep this file unchanged to use as a template for all future project pages. 
-
-  For every new project you add to your portfolio, make a copy of this file in the
-  'project-pages' folder with a name related to the project.
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -25,8 +13,8 @@
       This should be the same across all pages.
      -->
      <link rel="icon" href="../assets/images/1311.png" />
-     <title>Unemployables Portfolio</title>
-    <meta name="description" content="A portfolio template for the Unemployables community.">
+     <title>Analytics Portfolio</title>
+    <meta name="description" content="Data-driven Business Intelligence for Small and Local Business.">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<link rel="stylesheet" href="../css/layout.css">
@@ -34,26 +22,24 @@
     <link rel="stylesheet" href="../css/utilities.css">
 
 		<script defer src="../js/script.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	</head>
 	<body>
-    <!-- NAVBAR -->
     <div class="navbar">
       <a class="nav-title-link" href="../index.html">
-        <!-- 
-          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
-
-          (this should be the same across all pages)
-         -->
-        <span class="nav-title">Portfolio Title</span>
-        <!-- 
-          TODO - Change the email after 'mailto:' to your email address for contact 
-        
-          (this should be the same across all pages)
-        -->
-        <a class="button" href="mailto:whitevans.eth@gmail.com">
+        <span class="nav-title">Analytics Portfolio</span>
+      </a>
+      <div class="button-container">
+        <!-- <a class="button" target="_blank" href="trungdoquoc.com">
+          <span class="button-text"> My Blogs </span>
+        </a> -->
+        <a class="button" target="_blank" href="https://drive.google.com/drive/folders/1aEU9D_UEK0NuA4F6eroUI_DPBNYU3b-5?usp=share_link">
+          <span class="button-text"> My Resume </span>
+        </a>
+        <a class="button" href="mailto:trungquocdo1@gmail.com">
           <span class="button-text">Contact Me</span>
         </a>
-      </a>
+      </div>
     </div>
 
     <!-- MAIN PAGE CONTENT -->
@@ -68,11 +54,22 @@
             - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
-        <div class="main-title">Project Name</div>
-        <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div>
-        <image class="project-header-image" src="../assets/images/desktop.jpeg">
-      </div>
-
+        <div class="main-title">Kaggle Churn Model Competition</div>
+        <!-- <div class="body-text">
+          BIQA is an open-source business intelligence platform that empowers local businesses with data-driven insights. 
+          The platform aggregates customer's feedback and social presence data into actionable metrics, 
+          allowing businesses to gain competitive edge in their local market.
+          
+        </div> -->
+        <div class="body-text">
+          GitHub repo: <a href="https://github.com/analytics-portfolio/Churn-Predictive-Model/tree/main">Churn Predictive Model</a>
+        </div>
+        <div class="subheader-text">Table of Content: </div>
+          <ul> 
+            <li><a href="#section1">Part I: General Report</a></li>
+            <li><a href="#section2">Part II: Machine Learning Notebook Walkthrough</a></li>
+            <li><a href="#section3">Part III: Exploratory Data Analysis Walkthrough </a></li>
+          </ul>
       <!-- PROJECT DETAILS -->
       <!-- 
         TODO
@@ -81,42 +78,33 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
       -->
       <div id="project-details">
-        <div class="subheader-text">Project Details / Background</div>
         <div class="project-details-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+          <div class="body-text">
+            <a id="section1"></a>
+            <h2>Part I: General Report</h2>
+            <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fanalytics-portfolio%2FChurn-Predictive-Model%2Fblob%2Fmain%2FREADME.md&style=github&type=markdown&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+            
+            <br>
+
+            <a id="section2"></a>
+            <h2>Part II: Machine Learning Notebook Walkthrough</h2>
+            <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fanalytics-portfolio%2FChurn-Predictive-Model%2Fblob%2Fmain%2Fnotebooks%2Fml.ipynb&style=panda-syntax-light&type=ipynb&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+
+            <br>
+
+            <a id="section3"></a>
+            <h2>Part III: Exploratory Data Analysis Walkthrough</h2>
+            <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fanalytics-portfolio%2FChurn-Predictive-Model%2Fblob%2Fmain%2Fnotebooks%2Fdata_exploration.ipynb&style=panda-syntax-light&type=ipynb&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+          </div>
         </div>
-      </div>
+        
 
       <!-- IMAGE GALLERY -->
-      <div id="project-gallery">
+      <div id="Title">
         <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
-        <div class="subheader-text">Image Gallery</div>
+        <!-- <div class="subheader-text">Title</div> -->
         <div class="project-gallery-content">
-            <!-- 
-              TODO
-
-              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
-
-              Full Width Image:
-
-                <div class="gallery-image-container">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
-
-              Half Width Image: 
-
-                <div class="gallery-image-container half-width">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
-
-              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
-                  - IMAGE_NAME: the name of the image file in assets/images
-                  - IMAGE_CAPTION: to the caption of the image
-            -->
-            <div class="gallery-image-container half-width">
+            <!-- <div class="gallery-image-container half-width">
               <img src="../assets/images/code.jpeg" class="gallery-image">
               <span class="image-caption">Give your image a caption. People love context.</span>
             </div>
@@ -127,7 +115,7 @@
             <div class="gallery-image-container">
               <img src="../assets/images/camera.jpeg" class="gallery-image">
               <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
+            </div> -->
         </div>
       </div>
     </div>
@@ -139,23 +127,29 @@
 
         This should be the same across all pages.
       -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+      <!-- <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
         <image src="../assets/icons/instagram.svg" class="footer-icon"/>
-      </a>
+      </a> -->
       <!-- 
         TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+      <!-- <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
         <image src="../assets/icons/twitter.svg" class="footer-icon"/>
-      </a>
+      </a> -->
       <!-- 
         TODO - Change the email after "mailto" to your contact email 
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
+      <a class="icon-link" href="https://github.com/analytics-portfolio">
+        <image src="../assets/icons/github.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="https://linkedin.com/in/trungdoquoc">
+        <image src="../assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="mailto:trungquocdo1@gmail.com">
         <image src="../assets/icons/mail.svg" class="footer-icon"/>
       </a>
     </div>

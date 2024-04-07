@@ -1,19 +1,8 @@
-<!-- 
-  IMPORTANT! 
-  
-  Keep this file unchanged to use as a template for all future project pages. 
-
-  For every new project you add to your portfolio, make a copy of this file in the
-  'project-pages' folder with a name related to the project.
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <!-- 
+	<head>
+		<meta charset="utf-8">
+    <!-- 
       TODO
 
       Upload your Unemployable (or whatever photo you like) to the assets/images folder
@@ -23,130 +12,147 @@
 
       This should be the same across all pages.
      -->
-  <link rel="icon" href="../assets/images/1311.png" />
-  <title>Analytics Portfolio</title>
-  <meta name="description" content="E-Commerce Marketing Strategy Challenge">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <link rel="icon" href="../assets/images/1311.png" />
+     <title>Analytics Portfolio</title>
+    <meta name="description" content="Data-driven Business Intelligence for Small and Local Business.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="../css/layout.css">
-  <link rel="stylesheet" href="../css/typography.css">
-  <link rel="stylesheet" href="../css/utilities.css">
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
 
-  <script defer src="../js/script.js"></script>
-</head>
-
-<body>
-  <!-- NAVBAR -->
-  <div class="navbar">
-    <a class="nav-title-link" href="../index.html">
-      <!-- 
-          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
-
-          (this should be the same across all pages)
-         -->
-      <span class="nav-title">Analytics Portfolio</span>
-      <!-- 
-          TODO - Change the email after 'mailto:' to your email address for contact 
-        
-          (this should be the same across all pages)
-        -->
-      <a class="button" href="mailto:whitevans.eth@gmail.com">
-        <span class="button-text">Contact Me</span>
+		<script defer src="../js/script.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	</head>
+	<body>
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <span class="nav-title">Analytics Portfolio</span>
       </a>
-    </a>
-  </div>
+      <div class="button-container">
+        <!-- <a class="button" target="_blank" href="trungdoquoc.com">
+          <span class="button-text"> My Blogs </span>
+        </a> -->
+        <a class="button" target="_blank" href="https://drive.google.com/drive/folders/1aEU9D_UEK0NuA4F6eroUI_DPBNYU3b-5?usp=share_link">
+          <span class="button-text"> My Resume </span>
+        </a>
+        <a class="button" href="mailto:trungquocdo1@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </div>
+    </div>
 
-  <!-- MAIN PAGE CONTENT -->
-  <div id="main-content">
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
 
-    <!-- PROJECT HEADER -->
-    <div id="project-header">
-      <!-- 
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
             TODO
 
             - Change the 'main-title' text to the name of your project
             - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
-      <div class="main-title">E-Commerce Marketing Strategy Challenge</div>
-      <div class="body-text">The project demonstrates how this customer relationship analytics framework can turn sales and customer service data into insights for smarter business decision-making process.</div>
-      <image class="project-header-image" src="../assets/images/ecommerce_project.jpeg">
-    </div>
-
-    <!-- PROJECT DETAILS -->
-    <!-- 
+        <div class="main-title">Kaggle Churn Model Competition</div>
+        <!-- <div class="body-text">
+          BIQA is an open-source business intelligence platform that empowers local businesses with data-driven insights. 
+          The platform aggregates customer's feedback and social presence data into actionable metrics, 
+          allowing businesses to gain competitive edge in their local market.
+          
+        </div> -->
+        <div class="body-text">
+          GitHub repo: <a href="https://github.com/analytics-portfolio/Customer-Profiling-Segmentation-E-Commerce">E-Commerce Marketing Strategy Challenge</a>
+        </div>
+        <div class="subheader-text">Table of Content: </div>
+          <ul> 
+            <li><a href="#section1">Part I: General Report</a></li>
+            <li><a href="#section2">Part II: Customer Segmentation Walkthrough</a></li>
+            <li><a href="#section3">Part III: Understand Data through Visualization </a></li>
+          </ul>
+      <!-- PROJECT DETAILS -->
+      <!-- 
         TODO
+
         - Change the 'subheader-text' to whatever header you want for project details
         - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
       -->
-
       <div id="project-details">
-        <div class="subheader-text"> 🌐 Overview</div>
-          <div class="project-details-content">
-          <div class="body-text"> The project demonstrates how this customer relationship analytics framework can turn sales and customer service
-            data into insights for smarter business decision-making process. It enhances sales, customer service, and marketing by:
-          <ul>
-            <li><strong>Validating Customer Data</strong>: Pinpoint insights for targeted marketing, ensuring the marketing
-              strategy reach the right audience.</li>
-            <li><strong>Understanding Customer Behavior</strong>: Learn spending patterns and preferences to tailor marketing
-              efforts.</li>
-            <li><strong>Boosting Lead Generation</strong>: Identify which marketing tactics drive sales and apply them more
-              broadly to potentially increase revenue.</li>
-          </ul>
-            This simple combination of RFM clustering model with data transformation identify high-value customers,
-            developing retention strategies, and optimizing marketing efforts to increase customer loyalty and revenue. This dataset includes all transactions occurring between 2010 and 2011 from a UK-based retailer available at the
-            <a href="https://archive.ics.uci.edu/dataset/352/online+retail">UCI Machine Learning Repository</a>.    
+        <div class="project-details-content">
+          <div class="body-text">
+            <a id="section1"></a>
+            <h2>Part I: General Report</h2>
+            <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fanalytics-portfolio%2FCustomer-Profiling-Segmentation-E-Commerce%2Fblob%2Fmain%2FREADME.md&style=panda-syntax-light&type=markdown&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+            
+            <br>
+
+            <a id="section2"></a>
+            <h2>Part II: Customer Segmentation Walkthrough</h2>
+            <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fanalytics-portfolio%2FCustomer-Profiling-Segmentation-E-Commerce%2Fblob%2Fmain%2Fnotebooks%2Ffinal_report.ipynb&style=panda-syntax-light&type=ipynb&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+
+            <br>
+
+            <a id="section3"></a>
+            <h2>Part III: Exploratory Data Analysis Walkthrough</h2>
+            <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fanalytics-portfolio%2FCustomer-Profiling-Segmentation-E-Commerce%2Fblob%2Fmain%2Fnotebooks%2Ffeature_engineering.ipynb&style=panda-syntax-light&type=ipynb&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
           </div>
         </div>
-        <div class="body-text">
-          <h2 id="-result-summary">🌟 Result Summary</h2>
-          <object data="e-commerce-challege/plots/customer_segmentation_map.png" width="100%" height="100%"></object>
-          <iframe src="e-commerce-challege/plots/rfm_segmentation_3d.html" width="100%" height="800" frameborder="0" scrolling="no"></iframe>
+        
+
+      <!-- IMAGE GALLERY -->
+      <div id="Title">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <!-- <div class="subheader-text">Title</div> -->
+        <div class="project-gallery-content">
+            <!-- <div class="gallery-image-container half-width">
+              <img src="../assets/images/code.jpeg" class="gallery-image">
+              <span class="image-caption">Give your image a caption. People love context.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
+              <span class="image-caption">Give your image a caption. People love context.</span>
+            </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/camera.jpeg" class="gallery-image">
+              <span class="image-caption">Give your image a caption. People love context.</span>
+            </div> -->
         </div>
-      
-      <div class="body-text">
-        <h2 id="-objectives">🎯 Objectives</h2>
-        <p>The objectives of the project are as follows:</p>
-        <ul>
-          <li><strong>Data Cleaning &amp; Transformation</strong>: We clean up by handling missing values, duplicates, and outliers for future modeling process.</li>
-          <li><strong>Feature Engineering</strong>: Develop customer-centric features, setting the stage for customer segmentation.</li>
-          <li><strong>RFM Segmentation &amp; K-Means Clustering</strong>: Segment customers into distinct groups using K-means and RFM models, facilitating targeted marketing.</li>
-          <li><strong>Cluster Analysis &amp; Evaluation Metrics</strong>: Dive into the story of each cluster to understand customer's shopping behaviors, then develop optimized targeted marketing strategies.</li>
-        </ul>
       </div>
+    </div>
 
-  
-
-  </div>
-
-  <!-- FOOTER -->
-  <div id="footer">
-    <!-- 
+    <!-- FOOTER -->
+    <div id="footer">
+      <!-- 
         TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
 
         This should be the same across all pages.
       -->
-    <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-      <image src="../assets/icons/instagram.svg" class="footer-icon" />
-    </a>
-    <!-- 
+      <!-- <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+        <image src="../assets/icons/instagram.svg" class="footer-icon"/>
+      </a> -->
+      <!-- 
         TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
       
         This should be the same across all pages.
       -->
-    <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-      <image src="../assets/icons/twitter.svg" class="footer-icon" />
-    </a>
-    <!-- 
+      <!-- <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+        <image src="../assets/icons/twitter.svg" class="footer-icon"/>
+      </a> -->
+      <!-- 
         TODO - Change the email after "mailto" to your contact email 
       
         This should be the same across all pages.
       -->
-    <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
-      <image src="../assets/icons/mail.svg" class="footer-icon" />
-    </a>
-  </div>
+      <a class="icon-link" href="https://github.com/analytics-portfolio">
+        <image src="../assets/icons/github.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="https://linkedin.com/in/trungdoquoc">
+        <image src="../assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="mailto:trungquocdo1@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
 
-</body>
-
+	</body>
 </html>
